@@ -1,6 +1,11 @@
+import { useState } from "react";
+
+import Screen from "./Screen";
 import "./buttons.style.css";
 
 export default function App() {
+  const [runningTotal, setRunningTotal] = useState(0);
+
   const btnValues = {
     row0: "Rad | Deg x! ( ) % AC".split(" "),
     row1: "Inv sin ln 7 8 9 ÷".split(" "),
@@ -29,18 +34,11 @@ export default function App() {
     );
   }
 
-  console.log("🚀 ~ file: App.js ~ line 11 ~ App ~ btnsArray", btnsArray);
-
-  // notes for styling:
-  // "Rad" has the id of row1-btn0,
-  // "Deg" is #row1-btn1,
-  // "=" has #row4-btn5
-
   return (
     <div className="app">
       <h1>Calculator App</h1>
       <div className="calc">
-        <div className="screen">0</div>
+        <Screen runningTotal={runningTotal} />
         <div className="buttons"></div>
         {btnsArray.map((row) => (
           <div className="row">{row}</div>

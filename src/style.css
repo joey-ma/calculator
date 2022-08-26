@@ -23,15 +23,15 @@ h1 {
 .calc {
   background-color: #fff;
   border-radius: 1rem;
-  /* width: 20rem; */
+  width: 577px;
   padding: 2rem;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .screen {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   border: #F6F6F5 solid 3px;
   border-radius: 0.5rem;
   font-size: 2em;
@@ -39,4 +39,10 @@ h1 {
   /* text-align: right; */
   padding: 5px 20px;
   margin-bottom: 0.25em;
+}
+
+.calculations{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
