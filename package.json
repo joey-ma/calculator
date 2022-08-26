@@ -1,0 +1,30 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "a coderbyte assessment for Unifai (https://www.unifai.us/)",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoyoyojoe/calculator.git"
+  },
+  "keywords": [],
+  "author": "Joey Ma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoyoyojoe/calculator/issues"
+  },
+  "homepage": "https://github.com/yoyoyojoe/calculator#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
+  }
+}
