@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-import "./buttons.style.css";
+import "./CalcButtons.style.css";
 
 export default function CalcButtons({ btnValues }) {
   const btnsArray = [];
@@ -20,7 +20,6 @@ export default function CalcButtons({ btnValues }) {
             number={number}
           />
         );
-        // return <Button props={props} value={btn} />;
       })
     );
   }
