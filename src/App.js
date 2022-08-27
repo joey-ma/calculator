@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Screen from "./Screen";
-import "./buttons.style.css";
+import CalcButtons from "./CalcButtons";
 
 export default function App() {
   const [runningTotal, setRunningTotal] = useState(0);
@@ -14,35 +14,12 @@ export default function App() {
     row4: "Ans EXP x^(y) 0 . = +".split(" "),
   };
 
-  const btnsArray = [];
-  for (const row in btnValues) {
-    btnsArray.push(
-      btnValues[row].map((btn, i) => {
-        const number = Boolean(Number(btn) > -1 || btn === ".")
-          ? " number"
-          : "";
-        return (
-          <button
-            key={row + "-btn" + i}
-            id={row + "-btn" + i}
-            className={"btn" + number}
-          >
-            {btn}
-          </button>
-        );
-      })
-    );
-  }
-
   return (
     <div className="app">
       <h1>Calculator App</h1>
       <div className="calc">
         <Screen runningTotal={runningTotal} />
-        <div className="buttons"></div>
-        {btnsArray.map((row) => (
-          <div className="row">{row}</div>
-        ))}
+        <CalcButtons btnValues={btnValues} />
       </div>
     </div>
   );
