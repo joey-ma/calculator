@@ -2,7 +2,19 @@
 
 ## About
 
-This is a coderbyte assessment for Unifai (https://www.unifai.us/).
+This is an assessment for Unifai (https://www.unifai.us/).
+
+Working buttons currently include: 
+- all numbers 0-9
+- decimal "."
+- equal "="
+
+Working functions currently include: 
+- add "+"
+- subtract "–" 
+- multiply "×"
+- divide "÷"
+- clear ("AC")
 
 ## Dev Environment
 
@@ -36,8 +48,14 @@ Start the application.
 npm start
 ```
 
-Build the application for production, which can be worked on further as needed.
+Build application for production
 
 ```
 npm build
 ```
+
+# Notes
+
+Stumbled upon `math.js` (https://mathjs.org/) and would be super cool to implement for future iterations or other projects.
+
+Definitely more functions and features can be done to make this calculator even better!
