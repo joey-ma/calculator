@@ -21,7 +21,6 @@ export default function Button({ row, i, number, btnValue }) {
       "+": app.handleBasicOperators,
       "=": app.handleEquals,
       "%": app.handlePercent,
-      "+-": app.handleInvert,
     };
     if (results[value]) {
       return results[value](value);
