@@ -12,6 +12,10 @@ export default function Button({ row, i, number, btnValue }) {
   const app = utils(calc, setCalc);
 
   const handleButton = (value) => {
+    if (process.env.NODE_ENV !== "production") {
+      console.log(`${value} button clicked`);
+    }
+
     const results = {
       AC: app.handleAC,
       ".": app.handleDecimal,

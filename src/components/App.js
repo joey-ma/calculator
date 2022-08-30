@@ -5,6 +5,8 @@ import CalcButtons from "./CalcButtons";
 import CalcContextProvider from "../context/CalcContext";
 
 export default function App() {
+  console.log("current mode:", process.env.NODE_ENV);
+
   const btnValues = {
     row0: "Rad | Deg x! ( ) % AC".split(" "),
     row1: "Inv sin ln 7 8 9 ÷".split(" "),
