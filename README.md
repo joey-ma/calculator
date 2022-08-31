@@ -71,7 +71,7 @@ npm start
 
 Generally speaking, building production code for your project has many benefits ([here](https://parceljs.org/features/production/) for more details), but for this project it should not make much, if any, difference between the development build and the production build.
 
-After you build the application, if you want to go back to development mode, delete all files in your `dist` folder to run your application in development mode again with `npm start`. If the files (specifically `dist/index.html`) are/is not deleted, `parcel` will still use the same cached `index.html` file that references the production code at `dist/index.html` even if you want to run the app in development mode.
+After you build the application, if you want to go back to development mode, delete all files in your `dist` folder to run your application in development mode again with `npm start`. If the files (specifically `dist/index.html`) are/is not deleted, `parcel` will still use the same cached `index.html` file that references the same cached production-ready JavaScript files in `dist` and run in production mode even if you want to run the app in development mode.
 
 # Notes
 
